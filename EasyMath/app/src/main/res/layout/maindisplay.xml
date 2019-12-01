@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainDisplay"
+    android:background="@drawable/mdas">
+
+    <Button
+        android:id="@+id/btn_multiplication"
+        android:layout_width="179dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="51dp"
+        android:background="#0984e3"
+        android:text="Multiplication"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/btn_division"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toStartOf="@+id/btn_multiplication"
+        android:layout_toLeftOf="@+id/btn_multiplication"
+        android:background="#ff9f43"
+        android:text="Division" />
+
+    <Button
+        android:id="@+id/btn_addition"
+        android:layout_width="175dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/btn_division"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="296dp"
+        android:background="#eb2f06"
+        android:text="Addition" />
+
+    <Button
+        android:id="@+id/btn_subtraction"
+        android:layout_width="176dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/btn_multiplication"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="298dp"
+        android:layout_toEndOf="@+id/btn_addition"
+        android:layout_toRightOf="@+id/btn_addition"
+        android:background="#badc58"
+        android:text="Subtraction" />
+</RelativeLayout>
+
